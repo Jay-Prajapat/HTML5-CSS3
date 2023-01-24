@@ -1,0 +1,10 @@
+.head-style {
+    font-family: sans-serif;
+    color: blueviolet;
+    font-display: fallback;
+    text-align: center;
+    border: 1px solid black;
+    margin: 30px;
+    padding: 20px;
+    background-color: antiquewhite;
+}

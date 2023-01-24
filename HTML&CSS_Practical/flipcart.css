@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    margin-left: 150px;
+    margin-right: 20px;
+}
+
+.flipcartplus {
+    width: 150px;
+    height: 30px;
+}
+
+.header span {
+    color: #ffe500;
+}
+
+.explore_class {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.explore_class:hover {
+    text-decoration: underline white;
+    color: white;
+}
+
+.main {
+    display: flex;
+    background-color: #e4e7ed;
+    flex-direction: column;
+    justify-content: center;
+    margin:10px;
+}
+
+.searchBar {
+    margin: 15px;
+}
+
+.flex-container,
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    align-items: center;
+   
+}
+
+form.search1 input[type=text] {
+    width: 300px;
+    padding: 12px;
+    font-size: small;
+    border: none;
+    float: left;
+    background: #ffffff;
+}
+
+form.search1 button {
+    padding: 12px;
+    float: right;
+    background: #ffffff;
+    color: rgb(0, 98, 255);
+    font-size: small;
+    border: none;
+    cursor: pointer;
+}
+
+.loginDiv {
+    margin: 18px;
+}
+
+.loginDiv button {
+    border: none;
+    width: 150px;
+
+    height: 35px;
+    color: rgb(0, 98, 255);
+    background-color: white;
+    font-weight: bold;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white !important;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cart a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.middel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    align-items: center;
+ 
+   box-sizing: border-box;
+   margin-top: 10px;
+}
+
+.middel a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.middel_images {
+    width: 60px;
+}
+
+.middel_element {
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.description:hover {
+    color: rgb(45, 45, 235);
+}
+.main-1{
+    position: sticky;
+}
+.main-content {
+    width: 100%;
+    color: rgb(78, 78, 78);
+    padding: 10px;
+    border: 1px solid rgb(203, 203, 203);
+    background-color: white;
+    margin-top: 1rem;
+
+}
+
+label{
+    margin-bottom: 0px;
+}
+
+.child img:hover {
+    transition: all 0.2s ease;
+    transform: scale(1.025);
+}
+
+.child a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+}
+
+.name {
+    color: black;
+}
+
+.offer {
+    color: green;
+}
+
+.description {
+    color: gray;
+}
+
+.main-content-2 {
+ 
+    border: 1px solid rgb(203, 203, 203);
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.image {
+    height: 200px;
+    width: 130px;
+}
+
+.flex-main-content-3 {
+   width: 90%;
+   float: left;
+}
+
+.main-content-3 {
+    width: 100%;
+    border: 1px solid rgb(203, 203, 203);
+    background-color: white;
+}
+
+.SubDiscription {
+    color: grey;
+}
+
+.main-menu-content {
+    margin-top: 10px;
+    background-color: #e4e7ed;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.child {
+    width: 15%;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+.child img {
+    height: 200px;
+    width: 50%;
+}
+
+#leftarrow,
+#rightarrow,
+#leftArrow,
+#rightArrow {
+    margin-left: 12px;
+    width: 3%;
+    display: inline-block;
+    margin-top: 100px;
+
+}
+
+#leftarrow i,
+#rightarrow i ,
+#leftArrow i,
+#rightArrow i{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    font-size: 50px;
+}
+
+@media screen and (max-width:1136px) {
+    .main-content-2 {
+        overflow-x: auto;
+    }
+    .child {
+        width: 50%;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: none;
+    }
+    .child img {
+        height: 200px;
+        width: 100%;
+    }
+}

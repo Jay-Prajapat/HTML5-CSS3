@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="100px" height="200px" style="border: 1px; background: rgb(240, 234, 234);"></canvas>
+    <canvas id="mycan1" width="200px" height="100px" style="border: 1px; background-color: white;">
+    </canvas>
+    <svg width="100" height="100">
+        <circle cx="0" cy="50" r="40"
+        stroke="green" stroke-width="4" fill="yellow" />
+      Sorry, your browser does not support inline SVG.
+      </svg>
+    <script>
+        var c = document.getElementById("mycanvas");
+        var t = c.getContext("2d");
+        t.moveTo(0,0);
+        t.lineTo(50,200);
+        t.stroke();
+        var c2 = document.getElementById("mycan2");
+        var t2 = c2.getContext("2d");
+
+        var grd = t2.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"Red");
+        grd.addColorStop(1,"White");
+        c2.fillStyle=grd;
+        c2.fillRect(10,10,150,80);
+    </script>
+</body>
+</html>

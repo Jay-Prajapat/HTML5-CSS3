@@ -32,7 +32,7 @@
     background-color: #e4e7ed;
     flex-direction: column;
     justify-content: center;
-    margin:10px;
+    margin: 5px;
 }
 
 .searchBar {
@@ -46,7 +46,7 @@
     flex-wrap: wrap;
     column-gap: 10px;
     align-items: center;
-   
+
 }
 
 form.search1 input[type=text] {
@@ -136,9 +136,10 @@ i {
     flex-wrap: wrap;
     column-gap: 15px;
     align-items: center;
- 
-   box-sizing: border-box;
-   margin-top: 10px;
+
+    box-sizing: border-box;
+    /* margin-top: 10px; */
+
 }
 
 .middel a {
@@ -148,49 +149,53 @@ i {
     font-weight: 500;
 }
 
+
 .middel_images {
     width: 60px;
 }
 
 .middel_element {
 
-    justify-content: center;
-    align-items: center;
-    margin-top: 6rem;
+    margin-top: 1rem;
+    margin: 0px 5px;
+}
+
+.dropdown span {
+    font-weight: 500;
+    color: black;
+}
+
+.middel_element i {
+    color: black;
 }
 
 .description:hover {
     color: rgb(45, 45, 235);
 }
-.main-1{
-    position: sticky;
+
+.main-1 {
+    /* position: sticky; */
 }
+
 .main-content {
-    width: 100%;
+    width: 98%;
     color: rgb(78, 78, 78);
     padding: 10px;
     border: 1px solid rgb(203, 203, 203);
     background-color: white;
     margin-top: 1rem;
-
+    margin-left: 10px;
 }
 
-label{
+label {
     margin-bottom: 0px;
 }
 
-.child img:hover {
+img:hover {
     transition: all 0.2s ease;
     transform: scale(1.025);
 }
 
-.child a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: white;
-}
 
 .name {
     color: black;
@@ -205,23 +210,23 @@ label{
 }
 
 .main-content-2 {
- 
-    border: 1px solid rgb(203, 203, 203);
-    width: 100%;
-    display: flex;
-    padding: 25px;
-    justify-content: space-between;
+    width: 98%;
     background-color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
-.image {
-    height: 200px;
-    width: 130px;
+.flex-main-content {
+    width: 90%;
+    float: left;
 }
 
 .flex-main-content-3 {
-   width: 90%;
-   float: left;
+    width: 90%;
+    float: left;
 }
 
 .main-content-3 {
@@ -239,58 +244,96 @@ label{
     background-color: #e4e7ed;
 }
 
-.parent {
+.child {
+    /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
+    margin: 0 0.5em;
+    background-color: white;
+
+}
+
+.child a {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-}
-
-.child {
-    width: 15%;
-    margin-left: 20px;
-    margin-right: 20px;
-    display: none;
 }
 
 .child img {
+    margin-top: 5px;
+    max-width: 50%;
+    max-height: 100%;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+}
+
+/* for carousel */
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 50%;
+    max-height: 100%;
+    width: 150px;
     height: 200px;
-    width: 50%;
-}
+    justify-content: center;
 
-#leftarrow,
-#rightarrow,
-#leftArrow,
-#rightArrow {
-    margin-left: 12px;
-    width: 3%;
-    display: inline-block;
-    margin-top: 100px;
 
 }
 
-#leftarrow i,
-#rightarrow i ,
-#leftArrow i,
-#rightArrow i{
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 15px;
-    font-size: 50px;
+.card {
+    margin: 0 0.5em;
+    border: none;
+    border-radius: 0;
+    width: 18rem;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev {
+    left: -5%;
+}
+
+.carousel-control-next {
+    right: -5%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #0f0404;
+    border-radius: 50%;
+    background: none;
+  
+}
+.carousel-control-prev img,
+.carousel-control-next img{
+    width: 35px;
+}
+
+.card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
 }
 
 @media screen and (max-width:1136px) {
     .main-content-2 {
         overflow-x: auto;
     }
-    .child {
-        width: 50%;
-        margin-left: 20px;
-        margin-right: 20px;
-        display: none;
-    }
-    .child img {
-        height: 200px;
-        width: 100%;
-    }
+
+        /* .child {
+            width: 50%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .child img {
+            height: 200px;
+            width: 100%;
+        } */
 }

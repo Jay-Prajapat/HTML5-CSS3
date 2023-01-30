@@ -224,9 +224,26 @@ img:hover {
     float: left;
 }
 
+.SubDiscription {
+    color: grey;
+}
+
+.mainDiscription {
+    font-size: xx-large;
+    color: black;
+}
+
+.sublabel {
+    font-size: 15px;
+    color: grey;
+    margin-left: 15px;
+}
+
 .flex-main-content-3 {
     width: 90%;
     float: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-content-3 {
@@ -235,9 +252,7 @@ img:hover {
     background-color: white;
 }
 
-.SubDiscription {
-    color: grey;
-}
+
 
 .main-menu-content {
     margin-top: 10px;
@@ -307,10 +322,11 @@ img:hover {
     background-color: #0f0404;
     border-radius: 50%;
     background: none;
-  
+
 }
+
 .carousel-control-prev img,
-.carousel-control-next img{
+.carousel-control-next img {
     width: 35px;
 }
 
@@ -327,7 +343,7 @@ img:hover {
         overflow-x: auto;
     }
 
-        /* .child {
+    /* .child {
             width: 50%;
             margin-left: 20px;
             margin-right: 20px;

@@ -12,6 +12,5 @@
 }
 
 .multi-color-gradiant:hover{
-    color: blue;
     -webkit-text-fill-color:tomato;
 }

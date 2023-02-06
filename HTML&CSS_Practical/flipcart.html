@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shooping Site For Mobiles, Electronics,Furniture,Grocery</title>
+    <link rel="icon" type="image/x-icon" href="Images/flipcart.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="flipcart.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <div class="main-1">
+            <nav class="navbar bg-primary">
+                <div class="flex-container">
+                    <div class="header">
+                        <a href="#flipcartplus">
+                            <img src="Images/flipkart-plus.png" alt="Flipcart Plus" class="flipcartplus">
+                        </a>
+                        <a href="/explore" class="explore_class">Explore <span>Plus</span>
+                            <img src="Images/plus.png" alt="plus"></a>
+                    </div>
+                    <div class="searchBar">
+
+                        <form class="search1" action="#">
+                            <input type="text" placeholder="Search for producs, brands and more ... " name="search">
+                            <span> <button type="submit"><i class="fa fa-search"></i></button></span>
+                        </form>
+                    </div>
+                    <div class="loginDiv">
+                        <button type="submit" id="login" onclick="callToast()">Login </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">More <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content more-info">
+                            <a href="#"><i class="fa fa-bell"></i>Notification
+                                Preference</a>
+                            <a href="#"><i class="fa fa-question-circle"></i>24x7 Customer
+                                care</a>
+                            <a href="#"><i class="fa fa-line-chart"></i>Advertise</a>
+                            <a href="#"><i class="fa fa-download"></i>Download App</a>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <a href="#cart"><i class="fa fa-shopping-cart"></i>Cart</a>
+                    </div>
+
+                </div>
+            </nav>
+           
+        </div>
+        <div class="wrapper" id="wrapper">
+            <div class="toast success">
+                <div class="container-1">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="container-2">
+                   <p>You have logged in successfully.</p>
+                </div>
+                <button onclick="closetoast()">&times;</button>
+            </div>
+        </div>
+        <div class="middel">
+            <div class="middel-element">
+                <a href="topOffer.html"><img src="Images/Topoffers.jpg" alt="Topoffers" class="middel_images"></a>
+                <a href="topOffer.html" class="description">Top Offer</a>
+            </div>
+            <div class="middel-element">
+                <a href="tvAppliances.html"><img src="Images/tv&appliances.jpg" alt="Tv & appliances" class="middel_images"
+                        ></a>
+                <a href="tvAppliances.html" class="description">Tv & Appliacces</a>
+            </div>
+            <div class="middel-element">
+                <a href="#"><img src="Images/electronics.jpg" alt="Flipkart Electronics" class="middel_images"></a>
+                <div class="dropdown">
+                    <button class="dropbtn description"><span>Electronics</span> <i
+                            class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="electronics.html">Electronic GSt Store</a>
+                        <a href="electronics.html"> Cameras & Accessories</a>
+                        <a href="electronics.html">Computer Peripherals</a>
+                        <a href="electronics.html">Laptop Accessories</a>
+                        <a href="electronics.html"> Gaming</a>
+                        <a href="electronics.html">Tablets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middel-element">
+                <a href="#"><img src="Images/fashion.jpg" alt="Flipkart Fashion" class="middel_images"></a>
+                <div class="dropdown">
+                    <button class="dropbtn description"><span>Fashion</span>
+                        <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="fashion.html">Men's Top wear</a>
+                        <a href="fashion.html">Men's Bottom wear</a>
+                        <a href="fashion.html">Men Footwear</a>
+                        <a href="fashion.html">Women Western</a>
+                        <a href="fashion.html">Womens Footwear</a>
+                        <a href="fashion.html">Kids</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middel-element">
+                <a href="grocery.html"><img src="Images/grocery.jpg" alt="Grocery" class="middel_images"></a>
+                <a href="grocery.html" class="description">Grocery</a>
+            </div>
+            <div class="middel-element">
+                <a href="flight.html"><img src="Images/travel.jpg" alt="Flights" class="middel_images"></a>
+                <a href="flight.html" class="description">Travel</a>
+            </div>
+            <div class="middel-element">
+                <a href="#"><img src="Images/flipcartHome.jpg" alt="Flipkart Fashion" class="middel_images"></a>
+                <div class="dropdown">
+                    <button class="dropbtn description"><span>Home</span> <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="homeFurnishing.html">Home Furnishing</a>
+                        <a href="homeFurnishing.html">Living room furniture</a>
+                        <a href="homeFurnishing.html">Home Decor</a>
+                        <a href="homeFurnishing.html">Kitchen & Dining</a>
+                        <a href="homeFurnishing.html">Tools & Utility</a>
+                        <a href="homeFurnishing.html">Kids Furniture</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middel-element">
+                <a href="mobile-tab.html"><img src="Images/mobiles.jpg" alt="Mobile & Tablets" class="middel_images"
+                        ></a>
+                <a href="mobile-tab.html" class="description">Mobile & Tablets</a>
+            </div>
+            <div class="middel-element">
+                <a href="#"><img src="Images/toysAndBeauty.jpg" alt="Toys and Beauty" class="middel_images"></a>
+                <div class="dropdown">
+                    <button class="dropbtn description"><span>Beauty, Toys and more</span>
+                        <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="beautyAndToys.html">Beauty & personal care</a>
+                        <a href="beautyAndToys.html"> Food & drinks</a>
+                        <a href="beautyAndToys.html">Baby care</a>
+                        <a href="beautyAndToys.html">Hair Care</a>
+                        <a href="beautyAndToys.html">Face Makeup</a>
+                        <a href="beautyAndToys.html">Top Brand Deals</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main-menu-content">
+        <div class="main">
+            <div class="main-content">
+                <div class="flex-main-content">
+                    <label for="dealsOfTheDay" class="mainDiscription">Deals Of Day </label>
+                    <label for="icon" class="sublabel" ><i
+                             class="fa">&#xf017; </i>21 :
+                        18 : 56 Left</label>
+                </div>
+                <button class=" btn btn-primary float-end">View All</button></a>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide main-content-2" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <a href="#watch"><img src="Images/CasioWatch.jpg" alt="Casio Watch" class="image"></a>
+                                <a href="#watch" class="name">Tommy Hilfiger,Casio...</a>
+                                <a href="#watch" class="offer">60-90% off</a>
+                                <a href="#watch" class="description">Craziest Discount is Back!!</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#Adidas"><img src="Images/Adidas&puma.jpg" alt="Adidas & Puma"
+                                        class="image"></a>
+                                <a href="#Adidas" class="name">Adidas, Puma & more</a>
+                                <a href="#Adidas" class="offer">Min off</a>
+                                <a href="#Adidas" class="description">Womens Sports Shoes</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#Apple"><img src="Images/AppleiPads.jpg" alt="Apple iPads" class="image"></a>
+                                <a href="#Apple" class="name">Apple iPads</a>
+                                <a href="#Apple" class="offer">From <span>&#8377</span>29,990</a>
+                                <a href="#Apple" class="description">Best Of Tablets</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#Accesories"><img src="Images/realmePad.jpg"
+                                        alt="Top Selling Gaming Accesories" class="image"></a>
+                                <a href="#Accesories" class="name">Top Selling Gaming Accesories</a>
+                                <a href="#Accesories" class="offer">Shop Now</a>
+                                <a href="#Accesories" class="description">Microsoft, Sony and more</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#SmartWatchs"><img src="Images/NoiseWatch.jpg" alt="Noise SmartWatchs"
+                                        class="image"></a>
+                                <a href="#SmartWatchs" class="name">Noise SmartWatchs</a>
+                                <a href="#SmartWatchs" class="offer">From<span>&#8377</span>1,299</a>
+                                <a href="#SmartWatchs" class="description">Microsoft, Sony and more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <a href="#KidsOffer"><img src="Images/KidsOffer.jpg" alt="Kids Offer" class="image"></a>
+                                <a href="#KidsOffer" class="name">Kids Combosets</a>
+                                <a href="#KidsOffer" class="offer">Up to 80% off</a>
+                                <a href="#KidsOffer" class="description">Never Before Prices!</a>
+                            </div>
+
+                            <div class="card d-none d-md-block">
+                                <a href="#HomeFurnishing"><img src="Images/HomeFurnishing.jpg" alt="Home Furnishing"
+                                        class="image"></a>
+                                <a href="#HomeFurnishing" class="name">Home Furnishing range</a>
+                                <a href="#HomeFurnishing" class="offer">Up to 75% off</a>
+                                <a href="#HomeFurnishing" class="description">Blankets, Pillows & more</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#homeDecor"><img src="Images/homeDecor.jpg" alt="Home Decor" class="image"></a>
+                                <a href="#homeDecor" class="name">Home Decor Range</a>
+                                <a href="#homeDecor" class="offer">From<span>&#8377</span>99</a>
+                                <a href="#homeDecor" class="description">Lowest Price Guaranteed</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#Stationary"><img src="Images/Stattionary.jpg" alt="Stationary"
+                                        class="image"></a>
+                                <a href="#Stationary" class="name">Best Deals on Stationary</a>
+                                <a href="#Stationary" class="offer">Up to 75%+ Extra 10% Off</a>
+                                <a href="#Stationary" class="description">NoteBook, Pens sets and more</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#NoteBook&Pens"><img src="Images/NoteBook&Pens.jpg" alt="NoteBook & Pens"
+                                        class="image"></a>
+                                <a href="#NoteBook&Pens" class="name">NoteBook, Pens, Games & more</a>
+                                <a href="#NoteBook&Pens" class="offer">Up to 60% Extra 10% Off</a>
+                                <a href="#NoteBook&Pens" class="description">Classmate & more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <a href="#Charger"><img src="Images/Charger.jpg" alt="Charger" class="image"></a>
+                                <a href="#Charger" class="name">Buy Now</a>
+                                <a href="#Charger" class="offer">From<span>&#8377</span>99</a>
+                                <a href="#Charger" class="description">Ambrane, MI & more</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#Camera"><img src="Images/Camera.jpg" alt="Camera" class="image"></a>
+                                <a href="#Camera" class="name">Mirrorless Cameras</a>
+                                <a href="#Camera" class="offer">From<span>&#8377</span>57,999</a>
+                                <a href="#Camera" class="description">NCEMI | Product Exch</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#Printer"><img src="Images/Printer.jpg" alt="Printer" class="image"></a>
+                                <a href="#Printer" class="name">Top Rated Printers</a>
+                                <a href="#Printer" class="offer">From<span>&#8377</span>3799</a>
+                                <a href="#Printer" class="description">HP, Canon & more</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#Cabel"><img src="Images/Cabel.jpg" alt="Data Cabel" class="image"></a>
+                                <a href="#Cabel" class="name">Grab Now</a>
+                                <a href="#Cabel" class="offer">From<span>&#8377</span>3799</a>
+                                <a href="#Cabel" class="description">Ambrane, MI & more</a>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <a href="#light"><img src="Images/LighupNow.jpg" alt="light" class="image"></a>
+                                <a href="#light" class="name">Light-up Now</a>
+                                <a href="#light" class="offer">From<span>&#8377</span>199</a>
+                                <a href="#light" class="description">Digitek, Dogger & More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-prev-button">
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span aria-hidden="true"><img
+                                src="https://img.icons8.com/ios-filled/50/null/chevron-left.png" /></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span aria-hidden="true"><img
+                                src="https://img.icons8.com/ios-filled/50/null/chevron-right.png" /></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main-content">
+                <div class="flex-main-content-3">
+                    <label for="dealsOfTheDay" class="mainDiscription" >Stylish Home Decor
+                    </label>
+                    <label for="lowPrice" class="SubDiscription">Lowest Prices Ever</label>
+                </div>
+                <button class=" btn btn-primary float-end">View All</button></a>
+            </div>
+            <div class="main-content-2">
+                <div class="child">
+                    <a href="#Torches"><img src="Images/Torches.jpg" alt="Torches" class="image"></a>
+                    <a href="#Torches" class="name">Torches</a>
+                    <a href="#Torches" class="offer">Up to 80% Off</a>
+                    <a href="#Torches" class="description">Grab or Gone</a>
+                </div>
+                <div class="child">
+                    <a href="#EmergencyLights"><img src="Images/EmergencyLights.jpg" alt="Emergency Lights"
+                            class="image"></a>
+                    <a href="#EmergencyLights" class="name">Emergency Lights</a>
+                    <a href="#EmergencyLights" class="offer">Up to 50% Off</a>
+                    <a href="#EmergencyLights" class="description">Grab or Gone</a>
+                </div>
+                <div class="child">
+                    <a href="#Paintings"><img src="Images/showpieces1.jpg" alt="Paintings" class="image"></a>
+                    <a href="#Paintings" class="name">Showpieces</a>
+                    <a href="#Paintings" class="offer">Up to 60% off</a>
+                    <a href="#Paintings" class="description">Best Prices Ever</a>
+                </div>
+                <div class="child">
+                    <a href="#WallClocks"><img src="Images/wallClocks.jpg" alt="Wall Clocks" class="image"></a>
+                    <a href="#WallClocks" class="name">Wall Clocks</a>
+                    <a href="#WallClocks" class="offer">Up to 60% off</a>
+                    <a href="#WallClocks" class="description">Best Price Ever</a>
+                </div>
+                <div class="child">
+                    <a href="#Paintings"><img src="Images/paintings.jpg" alt="Paintings" class="image"></a>
+                    <a href="#Paintings" class="name">Paintings</a>
+                    <a href="#Paintings" class="offer">From<span>&#8377</span>89</a>
+                    <a href="#Paintings" class="description">Best Prices Ever</a>
+                </div>
+
+                <div class="child">
+                    <a href="#Showpieces"><img src="Images/showpieces.jpg" alt="Showpieces" class="image"></a>
+                    <a href="#Showpieces" class="name">Showpieces</a>
+                    <a href="#Showpieces" class="offer">Up to 70% off</a>
+                    <a href="#Showpieces" class="description">Best Price Ever</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.wrapper{
+   
+    width: 380px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    
+}
+.toast{
+    width: 100%;
+    height: 125px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    display:grid;
+    grid-template-columns: 1.3fr 6fr 0.5fr;
+    box-shadow: 0 15px 30px black
+}
+
+.success{
+    border-left: 8px solid green;
+}
+
+.container-1,.container-2{
+    align-self: center;
+}
+.success i{
+    color:green;
+}
+
+.container-1 i{
+    font-size: 35px;
+    
+}
+
+.container-2 p:first-child{
+    font-size: 30px;
+    color:rgb(32, 30, 30);
+    font-weight: 600;
+}
+.container-2 p:last-child{
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+}
+
+.toast button{
+    align-self: flex-start;
+    background-color: transparent;
+    font-size: 25px;
+    border: none;
+    line-height: 0;
+    cursor: pointer;
+    color: #263238;
+}
